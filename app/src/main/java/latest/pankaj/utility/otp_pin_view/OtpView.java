@@ -25,6 +25,7 @@ import java.util.regex.Pattern;
 
 import latest.pankaj.utility.R;
 
+
 public class OtpView extends LinearLayout {
     private EditText currentlyFocusedEditText;
     private List<EditText> editTexts = new ArrayList<>();

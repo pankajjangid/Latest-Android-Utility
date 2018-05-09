@@ -12,7 +12,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     >
 
-    <com.mukesh.OtpView
+    <latest.pankaj.utility.otp_pin_view.OtpView
         android:id="@+id/otp_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         app:length="3"
         >
         <requestFocus/>
-    </com.mukesh.OtpView>
+    </latest.pankaj.utility.otp_pin_view.OtpView>
     <Button
         android:id="@+id/delete"
         android:layout_width="wrap_content"

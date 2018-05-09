@@ -21,15 +21,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".otp_pin_view.OtpViewExampleActivity"></activity>
+        <activity android:name=".otp_pin_view.OtpViewExampleActivity" />
         <activity android:name=".permissions_utils.PermissionExampleActivity">
+
+        </activity>
+        <activity android:name=".drawing_view.DrawingViewActivity" />
+        <activity android:name=".otp_pin_view_2.PinViewActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".drawing_view.DrawingViewActivity"></activity>
     </application>
 
 </manifest>

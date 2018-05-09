@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="hint" format="string"/>
+
+    <declare-styleable name="Pinview">
+        <attr name="pinBackground" format="reference"/>
+        <attr name="pinLength" format="integer"/>
+        <attr name="pinWidth" format="dimension"/>
+        <attr name="pinHeight" format="dimension"/>
+        <attr name="splitWidth" format="dimension"/>
+        <attr name="cursorVisible" format="boolean"/>
+        <attr name="password" format="boolean"/>
+        <attr name="forceKeyboard" format ="boolean"/>
+        <attr name="inputType"/>
+        <attr name="hint"/>
+
+    </declare-styleable>
+    <attr name="inputType" format="enum">
+        <enum name="text" value="0"/>
+        <enum name="number" value="1"/>
+    </attr>
+
 
     <declare-styleable name="OtpView">
         <attr name="android:inputType"/>
@@ -15,6 +35,9 @@
         <attr format="dimension" name="space_top"/>
         <attr format="dimension" name="space_bottom"/>
         <attr format="color" name="hint_color"/>
-        <attr format="string" name="hint"/>
+        <attr name="hint"/>
     </declare-styleable>
+
+
+
 </resources>
