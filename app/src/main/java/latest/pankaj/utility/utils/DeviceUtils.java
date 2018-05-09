@@ -35,10 +35,10 @@ import latest.pankaj.utility.MyApp;
  * Created by Pankaj on 25/10/2017.
  */
 
-public class HardwareUtils {
+public class DeviceUtils {
 
-    private static final String TAG = "HardwareUtils";
-    private HardwareUtils() {
+    private static final String TAG = "DeviceUtils";
+    private DeviceUtils() {
         throw new UnsupportedOperationException("u can't instantiate me...");
     }
 

@@ -11,11 +11,14 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.annotation.RequiresPermission;
 import android.support.v4.content.FileProvider;
 
 import java.io.File;
 
 import latest.pankaj.utility.MyApp;
+
+import static android.Manifest.permission.CALL_PHONE;
 
 
 /**
@@ -184,15 +187,44 @@ public final class IntentUtils {
         return intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     }
 
+
     /**
-     * 获取跳至拨号界面意图
+     * Return the intent of dial.
      *
-     * @param phoneNumber 电话号码
+     * @param phoneNumber The phone number.
+     * @return the intent of dial
      */
     public static Intent getDialIntent(final String phoneNumber) {
-        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phoneNumber));
-        return intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        return getDialIntent(phoneNumber, false);
     }
+
+    /**
+     * Return the intent of dial.
+     *
+     * @param phoneNumber The phone number.
+     * @param isNewTask   True to add flag of new task, false otherwise.
+     * @return the intent of dial
+     */
+    public static Intent getDialIntent(final String phoneNumber, final boolean isNewTask) {
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phoneNumber));
+        return getIntent(intent, isNewTask);
+    }
+
+
+    /**
+     * Return the intent of call.
+     * <p>Must hold {@code <uses-permission android:name="android.permission.CALL_PHONE" />}</p>
+     *
+     * @param phoneNumber The phone number.
+     * @param isNewTask   True to add flag of new task, false otherwise.
+     * @return the intent of call
+     */
+    @RequiresPermission(CALL_PHONE)
+    public static Intent getCallIntent(final String phoneNumber, final boolean isNewTask) {
+        Intent intent = new Intent("android.intent.action.CALL", Uri.parse("tel:" + phoneNumber));
+        return getIntent(intent, isNewTask);
+    }
+
 
     /**
      * 获取拨打电话意图
@@ -206,17 +238,33 @@ public final class IntentUtils {
     }
 
     /**
-     * 获取跳至发送短信界面的意图
+     * Return the intent of send SMS.
      *
-     * @param phoneNumber 接收号码
-     * @param content     短信内容
+     * @param phoneNumber The phone number.
+     * @param content     The content of SMS.
+     * @return the intent of send SMS
      */
     public static Intent getSendSmsIntent(final String phoneNumber, final String content) {
+        return getSendSmsIntent(phoneNumber, content, false);
+    }
+
+    /**
+     * Return the intent of send SMS.
+     *
+     * @param phoneNumber The phone number.
+     * @param content     The content of SMS.
+     * @param isNewTask   True to add flag of new task, false otherwise.
+     * @return the intent of send SMS
+     */
+    public static Intent getSendSmsIntent(final String phoneNumber,
+                                          final String content,
+                                          final boolean isNewTask) {
         Uri uri = Uri.parse("smsto:" + phoneNumber);
         Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
         intent.putExtra("sms_body", content);
-        return intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        return getIntent(intent, isNewTask);
     }
+
 
 
     /**
@@ -231,6 +279,10 @@ public final class IntentUtils {
         return intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_ACTIVITY_NEW_TASK);
     }
 
+
+    private static Intent getIntent(final Intent intent, final boolean isNewTask) {
+        return isNewTask ? intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) : intent;
+    }
 //    /**
 //     * 获取选择照片的Intent
 //     *

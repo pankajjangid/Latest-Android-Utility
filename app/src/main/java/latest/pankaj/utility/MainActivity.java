@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         recyclerPkgList = (RecyclerView) findViewById(R.id.recyclerPkgList);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder,new FragmentPdf(),"FragmentPdf").commit();
-        // tvTextView.setText( HardwareUtils.getPhoneStatus());
+        // tvTextView.setText( DeviceUtils.getPhoneStatus());
 
         //GET Contacts
-        /* List<HashMap<String,String>> list = HardwareUtils.getAllContactInfo();
+        /* List<HashMap<String,String>> list = DeviceUtils.getAllContactInfo();
         for (int i = 0; i < list.size(); i++) {
             HashMap<String,String> hashMaps = list.get(i);
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         }*/
 
 
-       // Log.d(TAG, "isDeviceRooted : " + HardwareUtils.isDeviceRooted());
+       // Log.d(TAG, "isDeviceRooted : " + DeviceUtils.isDeviceRooted());
 //
        // Log.d(TAG, "IP Address : "+""+NetworkUtils.getIPAddress(true));
        // Log.d(TAG, "App VersionName : "+""+ AppUtils.getAppVersionName());
