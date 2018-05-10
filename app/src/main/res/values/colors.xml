@@ -10,4 +10,12 @@
     <color name="card_border">#ffb1bcbe</color>
     <color name="card_text_background">#00000000</color>
     <color name="card_back_background_canvas">#2d5b99</color>
+
+    <color name="inner_first_ring_color">#D0DD2B</color>
+    <color name="inner_second_ring_color">#98C73D</color>
+    <color name="inner_third_ring_color">#67CDDC</color>
+    <color name="overall_ring_color">#00A9E0</color>
+
+    <color name="ring_unfinished_color">#f2f2f2</color>
+    <color name="ring_default_filled_color">#e6e6e6</color>
 </resources>
