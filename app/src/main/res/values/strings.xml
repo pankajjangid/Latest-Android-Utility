@@ -26,5 +26,18 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <!--Credit Card View-->
+    <string name="valid_till">VALID TILL</string>
+    <string name="card_number_hint">ENTER CARD NUMBER</string>
+    <string name="expiry_date_hint">MM/YY</string>
+    <string name="card_name_hint">ENTER CARD NAME</string>
+    <string name="card_logo">Card Logo</string>
+    <string name="brand_logo">Brand Logo</string>
+    <string name="chip_visible">Chip Visible</string>
+    <string name="authorized_signature">Authorized Signature</string>
+    <string name="cvv_hint">cvv</string>
+    <!-- Font Path starts after `assets/` -->
+    <string name="font_path">fonts/halter.ttf</string>
     <!--Social Fragment String END-->
 </resources>

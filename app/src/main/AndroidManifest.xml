@@ -22,9 +22,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".otp_pin_view.OtpViewExampleActivity" />
-        <activity android:name=".permissions_utils.PermissionExampleActivity">
-
-        </activity>
+        <activity android:name=".permissions_utils.PermissionExampleActivity"></activity>
         <activity android:name=".drawing_view.DrawingViewActivity" />
         <activity android:name=".otp_pin_view_2.PinViewActivity2">
             <intent-filter>
@@ -33,6 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".credit_card_view.CreaditCardActivity"></activity>
     </application>
 
 </manifest>
