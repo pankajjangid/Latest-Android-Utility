@@ -26,12 +26,13 @@
         <activity android:name=".drawing_view.DrawingViewActivity" />
         <activity android:name=".otp_pin_view_2.PinViewActivity2" />
         <activity android:name=".credit_card_view.CreaditCardActivity" />
-        <activity android:name=".gauge_view.GaugeViewExampleActivity"></activity>
+        <activity android:name=".gauge_view.GaugeViewExampleActivity" />
         <activity android:name=".permission_utils_2.utils.PermissionExample2Activity" />
-        <activity android:name=".rings_view.RingsViewExampleActivity">
+        <activity android:name=".rings_view.RingsViewExampleActivity"></activity>
+        <activity android:name=".toast_custom.lib_files.ToastyExampleActivity">
 
         </activity>
-        <activity android:name=".toast_custom.lib_files.ToastyExampleActivity">
+        <activity android:name=".show_case_view.ShowCaseViewExampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
