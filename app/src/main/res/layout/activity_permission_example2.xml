@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".permission_utils_2.utils.PermissionExample2Activity">
+
+    <Button
+        android:id="@+id/contactBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#3b5998"
+        android:text="Contact"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/locationBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/contactTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="No Permission"
+        app:layout_constraintBottom_toBottomOf="@+id/contactBtn"
+        app:layout_constraintLeft_toRightOf="@+id/contactBtn"
+        app:layout_constraintTop_toTopOf="@+id/contactBtn" />
+
+    <Button
+        android:id="@+id/bothBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="#3b5998"
+        android:text="Request Both"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/locationBtn"
+        app:layout_constraintRight_toLeftOf="@+id/locationBtn"
+        app:layout_constraintTop_toTopOf="@+id/locationBtn" />
+
+    <Button
+        android:id="@+id/locationBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#3b5998"
+        android:text="Location"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/locationTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="No Permission"
+        app:layout_constraintBottom_toBottomOf="@+id/locationBtn"
+        app:layout_constraintLeft_toRightOf="@+id/locationBtn"
+        app:layout_constraintTop_toTopOf="@+id/locationBtn" />
+
+    <Button
+        android:id="@+id/audioBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#3b5998"
+        android:text="Audio"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationBtn" />
+
+    <TextView
+        android:id="@+id/audioTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="No Permission"
+        app:layout_constraintBottom_toBottomOf="@+id/audioBtn"
+        app:layout_constraintLeft_toRightOf="@+id/audioBtn"
+        app:layout_constraintTop_toTopOf="@+id/audioBtn" />
+</android.support.constraint.ConstraintLayout>
