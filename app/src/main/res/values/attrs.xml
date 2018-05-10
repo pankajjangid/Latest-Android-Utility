@@ -91,4 +91,31 @@
     </declare-styleable>
 
 
+    <!--==========================Gaugeview Attr================================-->
+
+    <declare-styleable name="kdgaugeview">
+        <attr name="maxSpeed" format="float" />
+        <attr name="minSpeed" format="float" />
+        <attr name="speed" format="float" />
+        <attr name="speed_limit" format="float" />
+        <attr name="animationTime" format="integer" />
+        <attr name="unitOfMeasurement" format="string" />
+        <attr name="speedTextSize" format="dimension" />
+        <attr name="unitOfMeasurementTextSize" format="dimension" />
+        <attr name="speedLimitTextSize" format="dimension" />
+        <attr name="speedDialRingWidth" format="dimension" />
+        <attr name="speedDialRingInnerPadding" format="dimension" />
+        <attr name="dialActiveColor" format="color" />
+        <attr name="dialInactiveColor" format="color" />
+        <attr name="dialSpeedColor" format="color" />
+        <attr name="dialSpeedAlertColor" format="color" />
+        <attr name="subDivisionCircleColor" format="color" />
+        <attr name="divisionCircleColor" format="color" />
+        <attr name="speedTextColor" format="color" />
+        <attr name="unitOfMeasurementTextColor" format="color" />
+        <attr name="speedLimitTextColor" format="color" />
+
+    </declare-styleable>
+
+
 </resources>
