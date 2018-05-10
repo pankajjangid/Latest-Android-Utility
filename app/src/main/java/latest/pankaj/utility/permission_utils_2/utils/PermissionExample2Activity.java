@@ -1,17 +1,12 @@
 package latest.pankaj.utility.permission_utils_2.utils;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-
 import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
-import android.support.v4.app.ActivityCompat;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -20,9 +15,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import latest.pankaj.utility.R;
-import latest.pankaj.utility.permission_utils_2.utils.GetPermission;
-import latest.pankaj.utility.permission_utils_2.utils.PermissionRequest;
-import latest.pankaj.utility.permission_utils_2.utils.PermissionRequestActivity;
 import latest.pankaj.utility.permission_utils_2.utils.interfaces.PermissionDeniedDelegate;
 import latest.pankaj.utility.permission_utils_2.utils.interfaces.PermissionRationalDelegate;
 import latest.pankaj.utility.permission_utils_2.utils.interfaces.PermissionResultCallback;
