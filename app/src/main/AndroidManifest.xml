@@ -29,13 +29,15 @@
         <activity android:name=".gauge_view.GaugeViewExampleActivity"></activity>
         <activity android:name=".permission_utils_2.utils.PermissionExample2Activity" />
         <activity android:name=".rings_view.RingsViewExampleActivity">
+
+        </activity>
+        <activity android:name=".toast_custom.lib_files.ToastyExampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".toast_custom.lib_files.ToastyExampleActivity"></activity>
     </application>
 
 </manifest>
