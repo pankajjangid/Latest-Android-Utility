@@ -51,4 +51,9 @@
     <string name="success_toast">SUCCESS TOAST</string>
     <string name="custom_configuration">CUSTOM CONFIGURATION</string>
     <!--Toast Eample Activity END-->
+
+
+    <!--TiketView START-->
+
+    <!--TiketView END-->
 </resources>
