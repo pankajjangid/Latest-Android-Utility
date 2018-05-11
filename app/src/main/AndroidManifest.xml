@@ -31,13 +31,16 @@
         <activity android:name=".rings_view.RingsViewExampleActivity" />
         <activity android:name=".toast_custom.lib_files.ToastyExampleActivity"></activity>
         <activity android:name=".show_case_view.ShowCaseViewExampleActivity">
+
+        </activity>
+        <activity android:name=".time_line_view.example.TimeLineMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ticket_view.lib_files.TicketViewExampleActivity"></activity>
+        <activity android:name=".time_line_view.example.TimeLineActivity"></activity>
     </application>
 
 </manifest>

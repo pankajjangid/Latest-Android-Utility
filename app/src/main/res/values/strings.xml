@@ -52,8 +52,11 @@
     <string name="custom_configuration">CUSTOM CONFIGURATION</string>
     <!--Toast Eample Activity END-->
 
+    <string name="action_settings">Settings</string>
 
-    <!--TiketView START-->
+    <string name="horizontal_timeline">Horizontal Timeline</string>
+    <string name="vertical_timeline">Vertical Timeline</string>
+    <string name="horizontal_timeline_w_padding">Horizontal Timeline With Line Padding</string>
+    <string name="vertical_timeline_w_padding">Vertical Timeline With Line Padding</string>
 
-    <!--TiketView END-->
 </resources>
