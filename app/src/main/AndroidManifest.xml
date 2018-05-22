@@ -41,6 +41,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".time_line_view.example.TimeLineActivity"></activity>
+
+        <activity android:name=".compaas_easy.CompassActivity"></activity>
     </application>
 
 </manifest>

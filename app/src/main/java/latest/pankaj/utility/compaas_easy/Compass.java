@@ -6,6 +6,11 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
+
+/**
+ * Created by Pankaj on 22/05/2018.
+ */
+
 public class Compass implements SensorEventListener {
     private static final String TAG = "Compass";
 

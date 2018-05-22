@@ -8,7 +8,9 @@ import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
 import latest.pankaj.utility.R;
-
+/**
+ * Created by Pankaj on 22/05/2018.
+ */
 
 public class CompassActivity extends AppCompatActivity {
 
