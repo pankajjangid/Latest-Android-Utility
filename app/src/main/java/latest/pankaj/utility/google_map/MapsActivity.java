@@ -62,7 +62,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
 
     public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
     private static final String TAG = "MapsActivity";
-    private static final String GOOGLE_KEY = "";
+    private static final String GOOGLE_KEY = "YOUR_KEY_HERE"; // Add Also in xml file
     double latitude;
     double longitude;
     GoogleApiClient mGoogleApiClient;
@@ -602,16 +602,19 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
 
     @Override
     public void onLocationChanged(Location location) {
+
+        //stop location updates
+        if (mGoogleApiClient != null) {
+            LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
+        }
+
         mLastLocation = location;
         if (mCurrLocationMarker != null) {
             mCurrLocationMarker.remove();
         }
 
 
-        //stop location updates
-        if (mGoogleApiClient != null) {
-            LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
-        }
+
         Log.d("onLocationChanged", "entered");
         //    temp = makeCall("https://maps.googleapis.com/maps/api/place/search/json?location=" + location.getLatitude() + "," + location.getLongitude() + "&radius=500&sensor=true&key=" + GOOGLE_KEY);
 
