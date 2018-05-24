@@ -4,10 +4,46 @@ import android.content.Context;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * Created by Kushal on 4/26/2016.
  */
 public class Validations {
+
+
+    /*
+    Be between 8 and 40 characters long
+    Contain at least one digit.
+    Contain at least one lower case character.
+    Contain at least one upper case character.
+    Contain at least on special character from [ @ # $ % ! . ].
+     */
+    private static final String PASSWORD_PATTERN = "((?=.*[a-z])(?=.*\\d)(?=.*[A-Z])(?=.*[@#$%!]).{8,40})";
+    private Matcher matcher;
+
+    public static boolean isValidPassword(EditText etPassword, String error) {
+         Pattern pattern = Pattern.compile(PASSWORD_PATTERN);
+
+        boolean val = false;
+        String password = etPassword.getText().toString().trim();
+
+        Matcher    matcher = pattern.matcher(password);
+
+        if (matcher.matches()) {
+
+            val = true;
+        } else {
+
+            etPassword.setError(error);
+            etPassword.requestFocus();
+
+        }
+
+        return val;
+    }
+
 
     // Check 10 Digit Mobile Number From Edtitext
 
