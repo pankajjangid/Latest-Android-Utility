@@ -39,10 +39,8 @@
         <activity android:name=".permission_utils_2.utils.PermissionExample2Activity" />
         <activity android:name=".rings_view.RingsViewExampleActivity" />
         <activity android:name=".toast_custom.lib_files.ToastyExampleActivity" />
-        <activity android:name=".show_case_view.ShowCaseViewExampleActivity"></activity>
-        <activity android:name=".time_line_view.example.TimeLineMainActivity">
-
-        </activity>
+        <activity android:name=".show_case_view.ShowCaseViewExampleActivity" />
+        <activity android:name=".time_line_view.example.TimeLineMainActivity"></activity>
         <activity android:name=".time_line_view.example.TimeLineActivity" />
         <activity android:name=".compaas_easy.CompassActivity" />
         <!--
@@ -60,6 +58,9 @@
         <activity
             android:name=".google_map.MapsActivity"
             android:label="@string/title_activity_maps">
+
+        </activity>
+        <activity android:name=".meter_view.MeterViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

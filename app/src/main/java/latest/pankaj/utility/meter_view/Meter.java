@@ -80,7 +80,7 @@ public class Meter extends View {
 
     private void init(TypedArray attrs) {
         mShowText = attrs.getBoolean(R.styleable.Meter_show_text, mShowText);
-        mFont = attrs.getString(R.styleable.Meter_font);
+        mFont = attrs.getString(R.styleable.Meter_fontName);
         mTextColor = attrs.getColor(R.styleable.Meter_text_color, mTextColor);
         mShowStartEndText = attrs.getBoolean(R.styleable.Meter_show_start_end_text, mShowStartEndText);
         mMaxNum = attrs.getInt(R.styleable.Meter_max, mMaxNum);

@@ -101,7 +101,7 @@ public class ImageUtlis {
      * @return Image orientation value corresponding to <code>ExifInterface.ORIENTATION_*</code> <br/>
      *         Returns -1 if the row for the {@link Uri} is not found.
      ****/
-    public static int getOrientation(Context context, Uri uri) {
+  /*  public static int getOrientation(Context context, Uri uri) {
 
         int invalidOrientation = -1;
         if (uri == null) {
@@ -128,7 +128,7 @@ public class ImageUtlis {
 
         return orientation;
     }
-
+*/
     /***
      * @deprecated Use {@link ImageUtlis#isMediaContentUri(Uri)} instead. <br/>
      *             Checks if the parameter {@link Uri} is a

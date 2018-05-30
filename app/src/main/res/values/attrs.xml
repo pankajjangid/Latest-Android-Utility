@@ -166,7 +166,7 @@
 
     <declare-styleable name="Meter">
         <attr name="show_text" format="boolean" />
-        <attr name="font" format="string" />
+        <attr name="fontName" format="string" />
         <attr name="text_color" format="color" />
         <attr name="show_start_end_text" format="boolean" />
         <!--<attr name="inside_progress_color"-->
