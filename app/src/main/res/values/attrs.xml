@@ -160,4 +160,36 @@
         <attr name="linePadding" format="dimension" />
         <attr name="markerInCenter" format="boolean" />
     </declare-styleable>
+
+
+    <!--========================== Meter View ==============================-->
+
+    <declare-styleable name="Meter">
+        <attr name="show_text" format="boolean" />
+        <attr name="font" format="string" />
+        <attr name="text_color" format="color" />
+        <attr name="show_start_end_text" format="boolean" />
+        <!--<attr name="inside_progress_color"-->
+        <!--format="color"/>-->
+        <!--<attr name="external_progress_color"-->
+        <!--format="color"/>-->
+        <!--<attr name="progress_blur_color"-->
+        <!--format="color"/>-->
+        <!--<attr name="bottom_meter_color"-->
+        <!--format="color"/>-->
+        <!--<attr name="internal_meter_color"-->
+        <!--format="color"/>-->
+        <!--<attr name="needle_color"-->
+        <!--format="color"/>-->
+        <!--<attr name="needle_blur_color"-->
+        <!--format="color"/>-->
+        <!--<attr name="digital_number_color"-->
+        <!--format="color"/>-->
+        <!--<attr name="digital_number_blur_color"-->
+        <!--format="color"/>-->
+        <attr name="max" format="integer" />
+        <attr name="min" format="integer" />
+        <!--<attr name="units"-->
+        <!--format="string"/>-->
+    </declare-styleable>
 </resources>
