@@ -179,7 +179,7 @@
         <!--format="color"/>-->
         <!--<attr name="internal_meter_color"-->
         <!--format="color"/>-->
-        <!--<attr name="needle_color"-->
+        <!--< attr name="needle_color"-->
         <!--format="color"/>-->
         <!--<attr name="needle_blur_color"-->
         <!--format="color"/>-->
@@ -191,5 +191,70 @@
         <attr name="min" format="integer" />
         <!--<attr name="units"-->
         <!--format="string"/>-->
+    </declare-styleable>
+
+
+    <!-- ============================ Progress View  ===============================-->
+
+
+    <attr name="progressTextSize" format="dimension" />
+    <attr name="progressTextColor" format="color" />
+    <attr name="progressTextOffset" format="dimension" />
+    <attr name="progressNormalColor" format="color" />
+    <attr name="progressReachColor" format="color" />
+    <attr name="progressNormalSize" format="dimension" />
+    <attr name="progressReachSize" format="dimension" />
+    <attr name="progressReachWidth" format="dimension" />
+    <attr name="progressNormalWidth" format="dimension" />
+    <attr name="progressTextVisible" format="boolean" />
+    <attr name="progressTextSkewX" format="dimension" />
+    <attr name="progressTextPrefix" format="string" />
+    <attr name="progressTextSuffix" format="string" />
+    <attr name="innerBackgroundColor" format="color" />
+
+    <declare-styleable name="HorizontalProgressView">
+        <attr name="progressNormalColor" />
+        <attr name="progressReachColor" />
+        <attr name="progressTextColor" />
+        <attr name="progressTextSize" />
+        <attr name="progressTextOffset" />
+        <attr name="progressNormalSize" />
+        <attr name="progressReachSize" />
+        <attr name="progressTextPosition" format="enum">
+            <enum name="TOP" value="1" />
+            <enum name="BOTTOM" value="-1" />
+            <enum name="CENTER" value="0" />
+        </attr>
+        <attr name="progressTextVisible" />
+        <attr name="progressTextSkewX" />
+        <attr name="progressTextPrefix" />
+        <attr name="progressTextSuffix" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="progressNormalColor" />
+        <attr name="progressReachColor" />
+        <attr name="progressTextColor" />
+        <attr name="progressTextSize" />
+        <attr name="progressTextOffset" />
+        <attr name="progressNormalSize" />
+        <attr name="progressReachSize" />
+        <attr name="radius" format="dimension" />
+        <attr name="progressTextVisible" />
+        <attr name="progressStartArc" format="integer" />
+        <attr name="progressTextSkewX" />
+        <attr name="progressTextPrefix" />
+        <attr name="progressTextSuffix" />
+        <attr name="innerBackgroundColor" />
+        <attr name="progressStyle" format="enum">
+            <enum name="Normal" value="0" />
+            <enum name="FillInner" value="1" />
+            <enum name="FillInnerArc" value="2" />
+        </attr>
+        <attr name="innerProgressColor" format="color" />
+        <attr name="innerPadding" format="dimension" />
+        <attr name="outerColor" format="color" />
+        <attr name="outerSize" format="dimension" />
+        <attr name="reachCapRound" format="boolean" />
     </declare-styleable>
 </resources>
