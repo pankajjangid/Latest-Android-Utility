@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.white.progressview.CircleProgressView
+        <latest.pankaj.utility.progress_view.files.CircleProgressView
             android:id="@+id/circle_progress_fill_in"
             android:layout_width="wrap_content"
             android:layout_height="160dp"
@@ -20,7 +20,7 @@
             app:progressTextColor="@android:color/white"
             app:radius="40dp" />
 
-        <com.white.progressview.CircleProgressView
+        <latest.pankaj.utility.progress_view.files.CircleProgressView
             android:id="@+id/circle_progress_normal"
             android:layout_width="wrap_content"
             android:layout_height="160dp"
@@ -29,7 +29,7 @@
             android:progress="0"
             app:radius="40dp" />
 
-        <com.white.progressview.CircleProgressView
+        <latest.pankaj.utility.progress_view.files.CircleProgressView
             android:id="@+id/circle_progress_fill_in_arc"
             android:layout_width="wrap_content"
             android:layout_height="160dp"
@@ -42,7 +42,7 @@
             app:radius="40dp" />
     </LinearLayout>
 
-    <com.white.progressview.HorizontalProgressView
+    <latest.pankaj.utility.progress_view.files.HorizontalProgressView
         android:id="@+id/horizontal_progress"
         android:layout_width="match_parent"
         android:layout_height="60dp"

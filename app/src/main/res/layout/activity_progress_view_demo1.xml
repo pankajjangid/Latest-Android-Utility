@@ -12,7 +12,7 @@
         android:layout_marginTop="16dp"
         android:orientation="horizontal">
 
-        <com.white.progressview.CircleProgressView
+        <latest.pankaj.utility.progress_view.files.CircleProgressView
             android:id="@+id/circle_progress_normal"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             app:progressStyle="Normal"
             app:radius="28dp" />
 
-        <com.white.progressview.CircleProgressView
+        <latest.pankaj.utility.progress_view.files.CircleProgressView
             android:id="@+id/circle_progress_fill_in"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             app:progressTextColor="@android:color/white"
             app:radius="28dp" />
 
-        <com.white.progressview.CircleProgressView
+        <latest.pankaj.utility.progress_view.files.CircleProgressView
             android:id="@+id/circle_progress_fill_in_arc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -49,14 +49,14 @@
             app:radius="28dp" />
     </LinearLayout>
 
-    <com.white.progressview.HorizontalProgressView
+    <latest.pankaj.utility.progress_view.files.HorizontalProgressView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:progress="2"
         app:progressTextVisible="true" />
 
-    <com.white.progressview.HorizontalProgressView
+    <latest.pankaj.utility.progress_view.files.HorizontalProgressView
         android:id="@+id/progress20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
         android:progress="20"
         app:progressTextVisible="true" />
 
-    <com.white.progressview.HorizontalProgressView
+    <latest.pankaj.utility.progress_view.files.HorizontalProgressView
         android:id="@+id/progress40"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
         app:progressTextColor="#f04134"
         app:progressTextVisible="true" />
 
-    <com.white.progressview.HorizontalProgressView
+    <latest.pankaj.utility.progress_view.files.HorizontalProgressView
         android:id="@+id/progress60"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
         app:progressTextColor="#00a854"
         app:progressTextVisible="false" />
 
-    <com.white.progressview.HorizontalProgressView
+    <latest.pankaj.utility.progress_view.files.HorizontalProgressView
         android:id="@+id/progress80"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
         app:progressTextColor="#ffff8800"
         app:progressTextVisible="true" />
 
-    <com.white.progressview.HorizontalProgressView
+    <latest.pankaj.utility.progress_view.files.HorizontalProgressView
         android:id="@+id/progress100"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
