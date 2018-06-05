@@ -7,6 +7,8 @@ android {
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 1
+        multiDexEnabled true
+
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -24,6 +26,8 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     implementation 'com.google.android.gms:play-services-location:15.0.1'
     implementation 'com.google.android.gms:play-services-places:15.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
+
 
 
     implementation 'com.larswerkman:lobsterpicker:1.0.1'
@@ -32,9 +36,9 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.google.code.gson:gson:2.8.1'
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
-    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 
 
     implementation 'com.android.support:design:27.1.1'
@@ -49,6 +53,15 @@ dependencies {
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    implementation 'com.facebook.fresco:fresco:1.8.0'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+// Because RxAndroid releases are few and far between, it is recommended you also
+// explicitly depend on RxJava's latest version for bug fixes and new features.
+// (see https://github.com/ReactiveX/RxJava/releases for latest 2.x.x version)
+
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
     implementation 'com.github.darsh2:MultipleImageSelect:3474549'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

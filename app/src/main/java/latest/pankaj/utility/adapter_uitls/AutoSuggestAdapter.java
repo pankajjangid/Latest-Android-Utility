@@ -18,11 +18,10 @@ public class AutoSuggestAdapter extends ArrayAdapter {
     private List<String> items;
     private List<String> tempItems;
     private List<String> suggestions;
-    Filter nameFilter = new Filter() {
+    private Filter nameFilter = new Filter() {
         @Override
         public CharSequence convertResultToString(Object resultValue) {
-            String str = (String) resultValue;
-            return str;
+            return (String) resultValue;
         }
 
         @Override
@@ -46,7 +45,7 @@ public class AutoSuggestAdapter extends ArrayAdapter {
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
             List<String> filterList = (ArrayList<String>) results.values;
-            if (results != null && results.count > 0) {
+            if (results.count > 0) {
                 clear();
                 for (String item : filterList) {
                     add(item);

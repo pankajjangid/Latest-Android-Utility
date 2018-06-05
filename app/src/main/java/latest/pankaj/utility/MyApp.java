@@ -4,12 +4,13 @@ import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.pm.PackageInfo;
 import android.support.multidex.MultiDex;
+import android.support.multidex.MultiDexApplication;
 
 /**
  * Created by Pankaj on 25/10/2017.
  */
 
-public class MyApp extends Application {
+public class MyApp extends MultiDexApplication {
 
     private static MyApp mInstance;
 
